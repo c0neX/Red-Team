@@ -1,3 +1,9 @@
+"""
+Educational Python Keylogger
+Created by c0ne (GitHub: https://github.com/enzofreitas)
+For educational purposes only. Unauthorized use is strictly prohibited.
+"""
+
 import os
 import platform
 import socket
