@@ -1,20 +1,20 @@
 <div align="center">
   <img src="https://media.giphy.com/media/phHUNy7wDCj3vElzCm/giphy.gif?cid=ecf05e47wuqxek870iteiyp1tfkb1p4sdi273isgd7n122am&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Red Team Banner" width="400">
   <h1><samp>🛡️</samp> Red Team Arsenal <samp>⚔️</samp></h1>
-  <p>Um repositório dedicado a táticas, técnicas e ferramentas para operações de Red Team.</p>
+  <p>A repository dedicated to tactics, techniques and tools for Red Team operations.</p>
 </div>
 
-## Conteúdo
+## Contents
 
-Este diretório contém recursos essenciais para Red Team:
+This directory contains essential resources for Red Team:
 
-* `tools/`: Ferramentas.
-* `methodologies/`: Metodologias.
+* `tools/`: Tools.
+* `methodologies/`: Methodologies.
 * `checklists/`: Checklists.
 * `payloads/`: Payloads.
-* `docs/`: Documentação.
-* `references/`: Referências.
+* `docs/`: Documentation.
+* `references/`: References.
 
-## 🤝 Contribuição
+## 🤝 Contributions
 
-Contribuições são bem-vindas! Crie uma `branch` para suas alterações e envie um `Pull Request`.
+Contributions are welcome! Create a `branch` for your changes and send a `Pull Request`.
