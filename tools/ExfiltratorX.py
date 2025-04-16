@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 ExfiltratorX - Covert file exfiltration tool for ethical red team testing
-Author: redteam_dev
+Author: c0neX
 LEGAL NOTICE: FOR AUTHORIZED LAB AND RESEARCH USE ONLY. DO NOT DEPLOY ON REAL INFRASTRUCTURE.
 """
 
